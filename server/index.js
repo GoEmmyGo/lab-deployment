@@ -27,9 +27,9 @@ try {
 let criticalFunc = 0 
 let warningFunc = 1
 
-if(criticalFunc === 1) {rollbar.critical('THIS IS CRITICAL, HOW MANY TIMES DO I HAVE TO TELL YOU')}
+if(criticalFunc === 0) {rollbar.critical('THIS IS CRITICAL, HOW MANY TIMES DO I HAVE TO TELL YOU')}
 
-if(warningFunc === 0) {rollbar.warning('THIS IS YOUR LAST WARNING')}
+if(warningFunc === 1) {rollbar.warning('THIS IS YOUR LAST WARNING')}
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
