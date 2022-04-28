@@ -19,7 +19,7 @@ try {
     nonExistentFunction();
   } catch (error) {
     rollbar.log(error)
-    r
+    
     // expected output: ReferenceError: nonExistentFunction is not defined
     // Note - error messages will vary depending on browser
   }
