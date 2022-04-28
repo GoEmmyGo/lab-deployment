@@ -18,10 +18,18 @@ rollbar.log('Hello world!')
 try {
     nonExistentFunction();
   } catch (error) {
-    rollbar.log(error);
+    rollbar.log(error)
+    r
     // expected output: ReferenceError: nonExistentFunction is not defined
     // Note - error messages will vary depending on browser
   }
+
+const criticalFunc = 0 
+const warningFunc = 1
+
+if(criticalFunc = 1) {rollbar.critical('THIS IS CRITICAL, HOW MANY TIMES DO I HAVE TO TELL YOU')}
+
+if(warningFunc = 0) {rollbar.warning('THIS IS YOUR LAST WARNING')}
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
