@@ -24,8 +24,8 @@ try {
     // Note - error messages will vary depending on browser
   }
 
-const criticalFunc = 0 
-const warningFunc = 1
+let criticalFunc = 0 
+let warningFunc = 1
 
 if(criticalFunc = 1) {rollbar.critical('THIS IS CRITICAL, HOW MANY TIMES DO I HAVE TO TELL YOU')}
 
